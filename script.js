@@ -43,23 +43,21 @@ function elart() {
 }
 function plus() {
   let input = document.getElementById("result");
-  var firstNum = Number(input.value);
-  input.value = firstNum + "+";
+
+  input.value += "+";
 }
 function minus() {
   let input = document.getElementById("result");
-  var firstNum = Number(input.value);
-  input.value = firstNum + "-";
+  input.value += "-";
 }
 function multiply() {
   let input = document.getElementById("result");
-  var firstNum = Number(input.value);
-  input.value = firstNum + "*";
+
+  input.value += "*";
 }
 function division() {
   let input = document.getElementById("result");
-  var firstNum = Number(input.value);
-  input.value = firstNum + "/";
+  input.value += "/";
 }
 function clearInput() {
   let input = document.getElementById("result");
