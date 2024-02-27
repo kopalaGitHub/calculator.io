@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Calculator</title>
+
+    <!-- For styling -->
+    <style>
+      table {
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      input[type="button"] {
+        width: 100%;
+        padding: 20px 40px;
+        background-color: green;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="text"] {
+        padding: 20px 30px;
+        font-size: 24px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        border: 2px solid black;
+      }
+      input:active {
+        background-color: rgb(0, 106, 0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Create table -->
+    <table id="calcu">
+      <tr>
+        <td colspan="3">
+          <input type="text" id="result" />
+        </td>
+        <td><input onclick="clearInput()" type="button" value="c" /></td>
+      </tr>
+
+      <tr>
+        <td><input onclick="getNumber1()" type="button" value="1" /></td>
+        <td><input onclick="getNumber2()" type="button" value="2" /></td>
+        <td><input onclick="getNumber3()" type="button" value="3" /></td>
+        <td>
+          <input onclick="division()" type="button" value="/" />
+        </td>
+      </tr>
+      <tr>
+        <td><input onclick="getNumber4()" type="button" value="4" /></td>
+        <td><input onclick="getNumber5()" type="button" value="5" /></td>
+        <td><input onclick="getNumber6()" type="button" value="6" /></td>
+        <td>
+          <input onclick="multiply()" type="button" value="*" />
+        </td>
+      </tr>
+      <tr>
+        <td><input onclick="getNumber7()" type="button" value="7" /></td>
+        <td><input onclick="getNumber8()" type="button" value="8" /></td>
+        <td><input onclick="getNumber9()" type="button" value="9" /></td>
+        <td><input onclick="minus()" type="button" value="-" /></td>
+      </tr>
+      <tr>
+        <td><input onclick="getNumber0()" type="button" value="0" /></td>
+        <td><input onclick="elart()" type="button" value="." /></td>
+        <td><input onclick="equal()" type="button" value="=" /></td>
+        <td><input onclick="plus()" type="button" value="+" /></td>
+      </tr>
+    </table>
+    <script src="./script.js"></script>
+  </body>
+</html>
